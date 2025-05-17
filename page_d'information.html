@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apprenez le développement web avec Webacademy. Inscrivez-vous aux cours sur HTML, CSS, JavaScript, Python et plus encore.">
+    <meta name="keywords" content="Développement Web, HTML, CSS, JavaScript, Python, Cours, Webacademy">
+    <meta property="og:title" content="Webacademy - Apprenez le Développement Web">
+    <meta property="og:description" content="Découvrez et inscrivez-vous aux cours de développement web sur Webacademy.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://webacademy.com">
+    <meta name="twitter:title" content="Webacademy - Apprenez le Développement Web">
+    <meta name="twitter:description" content="Inscrivez-vous aux cours Webacademy et commencez à apprendre le développement web dès aujourd'hui.">
+    <meta name="twitter:image" content="images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Webacademy - Apprenez le Développement Web</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/information.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Arial&display=swap" rel="stylesheet">
+    <script type="module" src="scripts/information.js"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-YJ17KCLW8N');
+      document.addEventListener("DOMContentLoaded", function () {
+        const voirCoursBtn = document.querySelector('a.cta-button[href="formations.html"]');
+    
+        if (voirCoursBtn) {
+          voirCoursBtn.addEventListener("click", function () {
+            gtag('event', 'click_voir_cours', {
+              'event_category': 'navigation',
+              'event_label': 'Voir les cours'
+            });
+          });
+        }
+      });
+    </script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="WebAcademy Logo" style="max-height: 80px;">
+    </div>
+
+    <button id="menu-toggle" class="menu-button">☰</button>
+    <nav id="nav-menu" class="nav-hidden">
+        <ul class="nav-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="detail.html">Cours</a></li>
+            <li><a href="inscription.html" class="cta-signin">S'inscrire</a></li>
+            <li><a href="detail.html">Explorer</a></li>
+            <li><a href="history.html">À propos</a></li>
+            <li><a href="#">Forum</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Merci d'être ici !</h1>
+            <p>Pour commencer, l'inscription est gratuite ! Le premier paiement pour la formation est dû après 4 jours le début des cours.</p>
+
+            <section class="formations">
+                <div class="caption">
+                    <h2>Développement Web Frontend</h2>
+                    <h3>Formation Débutant :</h3>
+                    <ul>
+                        <li>HTML & CSS (Débutant)</li>
+                        <li>JavaScript (Débutant)</li>
+                        <li>Python (Débutant)</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                    <p class="price"><strong>Prix total :</strong> $70 </p>
+                    <p><strong>Durée :</strong> 7 semaines</p>
+                </div>
+
+                <div class="caption">
+                    <h2>Développement Web Complet Frontend + Backend</h2>
+                    <h3>Formation Avancée :</h3>
+                    <ul>
+                        <li>HTML & CSS (Avancé)</li>
+                        <li>JavaScript (Avancé)</li>
+                        <li>Python (Avancé)</li>
+                        <li>MySQL (Avancé)</li>
+                        <li>Python (Avancé)</li>
+                        <li>node.js(Avancé)</li>
+                        <li>mongoDB (Avancé)</li>
+                        <li>pgadmin (Avancé)</li>
+                        <li>git (Avancé)</li>
+                        <li>github (Avancé)</li>
+                        <li>Marketing Digital</li>
+                    </ul>
+                    <p class="price"><strong>Prix total :</strong> 100 $</p>
+                    <p><strong>Durée :</strong> 12 semaines</p>
+                </div>
+            </section>
+
+            <p>La formation inclut des projets pratiques pour vous aider à appliquer vos nouvelles compétences.</p>
+
+            <p><strong>Paiements :</strong> L'inscription ainsi que toute la phase d'introduction sont entièrement gratuites. Aucun paiement ne sera demandé au début de la formation.</p>
+
+
+            <button id="select-beginner" class="cta-button">Choisir Formation Débutant</button>
+            <button id="select-advanced" class="cta-button">Choisir Formation Avancée</button>
+            <button id="reset-preference" class="cta-button">Réinitialiser le Choix</button>
+        </div>
+    </section>
+
+    <section class="details">
+        <!-- Détails supplémentaires à ajouter ici -->
+    </section>
+
+    <section class="cta-about">
+        <h3>Profitez de notre offre spéciale</h3>
+        <p>Inscrivez-vous aujourd'hui et bénéficiez de 15% de réduction sur toutes nos formations en développement web.</p>
+        <a href="inscription.html" class="cta-button">INSCRIVEZ-VOUS ICI</a>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-bottom">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Logo Webacademy">
+        </div>
+        <div class="footer-rules">
+            <div class="footer-rule">
+                <a href="privacy-policy.html" class="cta-button">Politique de Confidentialité</a>
+            </div>
+            <div class="footer-rule">
+                <a href="terms-of-use.html" class="cta-button">Conditions d’Utilisation</a>
+            </div>
+            <div class="footer-rule">
+                <a href="cookie-policy.html" class="cta-button">Politique des Cookies</a>
+            </div>
+            <div class="footer-rule">
+                <a href="about-us.html" class="cta-button">Objectif du Site</a>
+                <p>&copy; 2025 Webacademy - Tous droits réservés</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
