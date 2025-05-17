@@ -2,9 +2,9 @@
   "name": "webacademy",
   "version": "1.0.0",
   "description": "WebAcademy Node.js app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "Elder Lusa",
   "license": "ISC",
